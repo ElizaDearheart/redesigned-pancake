@@ -69,7 +69,7 @@ nav button:hover {
   display: grid;
 }
 
-/* home.js */
+/* shared */
 
 .home-page {
   display: grid;
@@ -90,6 +90,8 @@ nav button:hover {
   padding: 2rem;
   padding-top: 10rem;
 }
+
+/* home.js */
 
 .info-div .text-one {
   font-size: 6rem;
@@ -131,4 +133,15 @@ nav button:hover {
   color: whitesmoke;
   font-size: 0.5em;
   width: 6em;
+}
+
+/* about.js */
+
+.info-div .about-one {
+  font-size: 6rem;
+}
+
+.info-div .about-two {
+  font-size: 10rem;
+  font-family: "Great Vibes";
 }

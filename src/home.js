@@ -57,3 +57,7 @@ function Home() {
 }
 
 Home();
+
+//TODO:
+// - add email validation
+// - add submit function
