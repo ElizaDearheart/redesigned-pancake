@@ -1,27 +1,31 @@
 import "./styles.css";
-import "./home.js";
-import "./menu.js";
-import "./about.js";
+import { renderHome } from "./home.js";
+import { renderMenu } from "./menu.js";
+import { renderAbout } from "./about.js";
 
-console.log("hello");
+function clearDiv() {
+  let divContent = document.getElementById("content");
 
-function Navigate() {
-  const page = document.getElementById("content");
-  const home = document.getElementById("home");
-  const menu = document.getElementById("menu");
-  const about = document.getElementById("about");
+  while (divContent.firstChild) {
+    divContent.removeChild(divContent.firstChild);
+  }
+}
 
-  document.addEventListener("click", () => {
-    if ("click" == home) {
-      page = Home();
-    } else if ("click" == menu) {
-      page = Menu();
-    } else if ("click" == about) {
-      page = About();
-    } else {
-      page = Home();
-    }
+function navigate() {
+  renderHome();
+
+  document.getElementById("aboutButton").addEventListener("click", () => {
+    clearDiv();
+    renderAbout();
+  });
+  document.getElementById("menuButton").addEventListener("click", () => {
+    clearDiv();
+    renderMenu();
+  });
+  document.getElementById("homeButton").addEventListener("click", () => {
+    clearDiv();
+    renderHome();
   });
 }
 
-Navigate();
+navigate();

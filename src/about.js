@@ -1,6 +1,7 @@
 import tulip from "./images/tulip.jpg";
+export { renderAbout };
 
-function About() {
+function renderAbout() {
   //mainContentDiv
   let mainContentDiv;
   mainContentDiv = document.getElementById("content");
@@ -33,5 +34,3 @@ function About() {
   infoDiv.appendChild(aboutOne);
   infoDiv.appendChild(aboutTwo);
 }
-
-About();

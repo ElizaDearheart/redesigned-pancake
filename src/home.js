@@ -1,6 +1,7 @@
 import tulip from "./images/tulip.jpg";
+export { renderHome };
 
-function Home() {
+function renderHome() {
   //mainContentDiv
   let mainContentDiv;
   mainContentDiv = document.getElementById("content");
@@ -55,8 +56,6 @@ function Home() {
   submitButton.textContent = "Submit";
   signupForm.appendChild(submitButton);
 }
-
-Home();
 
 //TODO:
 // - add email validation

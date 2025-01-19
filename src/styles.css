@@ -145,3 +145,36 @@ nav button:hover {
   font-size: 10rem;
   font-family: "Great Vibes";
 }
+
+/* menu.js */
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: center;
+}
+.menu {
+  border: #646669;
+  border-width: 7px;
+  border-style: solid;
+  padding: 2rem;
+  text-align: center;
+  width: 60rem;
+  box-shadow: 1.5em 0 1.5em var(--dark-grey);
+}
+
+.menu h1 {
+  font-size: 7rem;
+  font-family: "Great Vibes";
+}
+
+.menu h3 {
+  font-size: 3rem;
+  white-space: pre;
+}
+
+.menu h4 {
+  font-size: 1.5rem;
+  white-space: pre;
+}
